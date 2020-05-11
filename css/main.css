@@ -11,6 +11,9 @@
 
 .paragraph {
   color: #757575;
+
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .Studio {
@@ -29,23 +32,40 @@
 body {
   background-color: #e5e5e5;
   color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 .list {
   list-style: none;
 }
 
+/*logo*/
+
 .logo {
   color: #2196f3;
+  font-family: Raleway;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
 .logo:hover {
   color: var(--primary-text-color);
 }
+
 /* Site-nav */
 
 .site-nav .link {
   color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -59,18 +79,35 @@ body {
 
 .hero-title {
   color: #ffffff;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Section */
 
 .section-title {
   color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 
 /* Features */
 
 .feature-list .title {
   color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 /* Examples */
