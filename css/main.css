@@ -1,0 +1,90 @@
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+
+:root {
+  --primary-text-color: color #212121;
+  --title-text-color: color #757575;
+  --accent-color: color #2196f3;
+}
+
+.paragraph {
+  color: #757575;
+}
+
+.Studio {
+  color: #212121;
+}
+
+.studio {
+  color: #ffffff;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+body {
+  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  color: #2196f3;
+}
+
+.logo:hover {
+  color: var(--primary-text-color);
+}
+/* Site-nav */
+
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: #2196f3;
+}
+
+.hero-title {
+  color: #ffffff;
+}
+
+/* Section */
+
+.section-title {
+  color: var(--primary-text-color);
+}
+
+/* Features */
+
+.feature-list .title {
+  color: var(--primary-text-color);
+}
+
+/* Examples */
+
+.applications-list .title {
+  color: #ffffff;
+}
+
+/* Team */
+
+.team-list .title {
+  color: var(--primary-text-color);
+}
+
+.address {
+  color: rgba(255, 255, 255, 0.6);
+}
