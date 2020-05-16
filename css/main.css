@@ -69,12 +69,12 @@ body {
 
 /* Contacts */
 
-.contacts-nav .connection {
+.contacts-nav .contacts {
   color: #757575;
 }
 
-.contacts-nav .connection:hover,
-.contacts-nav .connection:focus {
+.contacts-nav .contacts:hover,
+.contacts-nav .contacts:focus {
   color: #2196f3;
 }
 
@@ -138,6 +138,10 @@ body {
 }
 
 .address {
+  color: #ffffff;
+}
+
+.contacts {
   color: rgba(255, 255, 255, 0.6);
 }
 
