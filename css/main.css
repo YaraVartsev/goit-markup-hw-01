@@ -7,6 +7,8 @@ body {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -26,11 +28,21 @@ body {
   --accent-color: color #2196f3;
 }
 
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  outline: 2px solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /*logo*/
 
 .logo {
   color: var(--primary-text-color);
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
 
   font-weight: 700;
   font-size: 26px;
@@ -38,13 +50,20 @@ body {
   text-decoration: none;
 }
 
+.web {
+  color: #2196f3;
+}
+
 .logo:hover,
 .logo:focus {
   color: #2196f3;
 }
 
-.Web {
-  color: #2196f3;
+/* page-header */
+
+.page-header {
+  background-color: #fff;
+  margin-bottom: 200px;
 }
 
 /* Site-nav */
@@ -63,7 +82,7 @@ body {
   color: #2196f3;
 }
 
-.site-nav .link.current {
+.site-nav .current {
   color: #2196f3;
 }
 
@@ -81,14 +100,40 @@ body {
 /* Hero */
 
 .hero-title {
-  color: #ffffff;
-
+  margin-top: 0;
+  margin-bottom: 46px;
+  
+  color: #fff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  background-color: teal;  
+}
+
+/* button */
+
+.button {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+
+  color: #fff;
+  background-color: #2196f3;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /* Section */
@@ -116,7 +161,7 @@ body {
 /* Examples */
 
 .applications-list .title {
-  color: #ffffff;
+  color: #fff;
   background-color: rgba(47, 48, 58, 0.8);
 
   font-weight: 700;
@@ -137,12 +182,16 @@ body {
   text-align: center;
 }
 
+/* address */
+
 .address {
-  color: #ffffff;
+  color: #fff;
+  font-style: normal
 }
 
 .contacts {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
 }
 
 .paragraph {
@@ -152,25 +201,18 @@ body {
   line-height: 1.71;
 }
 
-.Studio {
-  color: #2196f3;
-}
+/* footer */
 
-.button {
-  color: #ffffff;
-  background-color: #2196f3;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-}
-
-.footer {
+.page-footer {
   background-color: #2f303a;
+}
+
+.studio {
+  color: #fff;
+}
+
+.action {
+  color: #fff;
 }
 
 /* классы для портфолио */
@@ -186,7 +228,7 @@ body {
 
 .filter:hover, 
 .filter:focus {
-  color: #ffffff;
+  color: #fff;
   background-color: #2196f3;
 }
 
