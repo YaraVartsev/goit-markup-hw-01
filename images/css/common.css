@@ -1,0 +1,36 @@
+:root {
+  --primary-text-color: color #212121;
+  --title-text-color: color #757575;
+  --accent-color: color #2196f3;
+}
+
+.Studio {
+  color: #2196f3;
+}
+
+body {
+  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+}
+
+.logo {
+  color: #2196f3;
+}
+
+.logo:hover {
+  color: var(--primary-text-color);
+}
+/* Site-nav */
+
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: #2196f3;
+}

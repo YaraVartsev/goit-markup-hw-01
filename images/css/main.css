@@ -1,0 +1,421 @@
+/* цвет основного текста #212121 */
+
+/* вторичный цвет текста #757575 */
+
+/* акцент #2196F3 */
+
+/* белый #FFFFFF */
+
+/* вторичный цвет фона */
+
+:root {
+  --primary-text-color: color #212121;
+  --title-text-color: color #757575;
+  --accent-color: color #2196f3;
+}
+
+body {
+  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* утиліти */
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*logo*/
+
+.logo {
+  color: var(--primary-text-color);
+  font-family: Raleway, sans-serif;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.web {
+  color: #2196f3;
+}
+
+.logo:hover,
+.logo:focus {
+  color: #2196f3;
+}
+
+/* page-header */
+
+.page-header {
+  background-color: #fff;
+}
+
+/* main nav */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Site-nav */
+
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+/* .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 4px solid transparent;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+  border-bottom: 4px solid #2196f3;
+}
+
+.site-nav .current {
+  color: #2196f3;
+}
+
+/* Contacts */
+
+.contacts-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-nav .item + .item {
+  margin-left: 30px;
+
+}
+
+.contacts-nav .contact {
+  color: #757575;
+  text-decoration: none;
+}
+
+.contacts-nav .contact:hover,
+.contacts-nav .contact:focus {
+  color: #2196f3;
+}
+
+/* Hero */
+
+.hero {
+  margin-top: 200px;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 46px;
+
+  color: #fff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;  
+}
+
+/* button */
+
+.button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+  margin-bottom: 200px;
+  text-decoration: none;
+
+  color: #fff;
+  background-color: #2196f3;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+  background-color: #fff;
+}
+
+/* Section */
+
+.section {
+  margin-bottom: 94px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Features */
+
+.feature-list {
+  display: flex;
+
+}
+
+.feature-list .item + .item {
+  margin-left: 30px;
+}
+
+.feature-list .item {
+  width: 270p;
+}
+
+.feature-list .title {  
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--primary-text-color);
+  
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Examples */
+
+.applications-list {
+  display: flex;
+}
+
+.applications-list .item + .item {
+  margin-left: 30px;
+}
+
+.applications-list .title {
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Team */
+
+.team-list {
+  display: flex;
+  text-align: center;
+}
+
+.team-list > li {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding-bottom: 24px;
+  width: calc((100% - 3 * 30px) / 4);
+}
+
+.team-list .item + .item {
+  margin-left: 30px;
+}
+
+.team-list .title {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+  .list .network {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* clients */
+
+.clients-list {
+  display: flex;
+  text-align: center;
+  justify-content: center; 
+}
+
+.clients-list .item {
+  display: flex;
+  justify-content: center;
+  min-width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+}
+
+.clients-list .item + .item {
+  margin-left: 30px;
+}
+
+.paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #757575;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* footer */
+
+.footer-addres {
+  display: flex;
+  align-items: center;
+}
+
+.footer-network {
+  display: flex;
+}
+
+.page-footer {
+  background-color: #2f303a;
+}
+
+.studio {
+  color: #fff;
+}
+
+.action {
+  color: #fff;
+}
+
+/* address */
+
+.address {
+  color: #fff;
+  font-style: normal
+}
+
+.contacts {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+.sign {
+  display: flex;
+  justify-content: center;
+}
+
+/* классы для портфолио */
+
+/* filter */
+
+.section-filters {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-item + .list-item {
+  margin-left: 8px;
+}
+
+.filter {
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: #F5F4FA;
+}
+
+.filter:hover, 
+.filter:focus {
+  color: #fff;
+  background-color: #2196f3;
+}
+
+/* cards */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.element {
+  width: 380px;
+  margin-right: 30px;
+}
+
+.element:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* name */
+
+.name {
+  color: #212121;
